@@ -16,7 +16,6 @@ cd merch-store-backend
 ```
 
 ### 2. Создаём `.env` файл (если нужно)
-Создайте файл `.env` в корне проекта:
 ```ini
 POSTGRES_DB=merchstore
 POSTGRES_USER=user
