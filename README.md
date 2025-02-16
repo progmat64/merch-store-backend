@@ -74,7 +74,7 @@ docker-compose exec web python manage.py createsuperuser
 GET /api/buy/t-shirt/
 ```
 
-## Нагрузочное тестирование (Locust)
+## Нагрузочное тестирование
 
 Было проведено нагрузочное тестирование с использованием **Locust**.
 
