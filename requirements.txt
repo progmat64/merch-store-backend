@@ -1,6 +1,6 @@
-django
-djangorestframework
-djangorestframework-simplejwt
-psycopg2-binary
-gunicorn
-locust
+Django==5.1.6
+djangorestframework==3.15.2
+djangorestframework_simplejwt==5.4.0
+gunicorn==23.0.0
+locust==2.32.9
+psycopg2-binary==2.9.10
