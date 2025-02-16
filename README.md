@@ -33,12 +33,17 @@ docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate
 ```
 
-### 5. Создаём суперпользователя
+### 5. Собираем статические файлы
+```bash
+docker-compose exec web python manage.py collectstatic --noinput
+```
+
+### 6. Создаём суперпользователя
 ```bash
 docker-compose exec web python manage.py createsuperuser
 ```
 
-### 6. Готово
+### 7. Готово
 Админ-панель доступна по адресу: [http://localhost:8080/admin/](http://localhost:8080/admin/)
 
 ## API Методы
@@ -51,7 +56,7 @@ docker-compose exec web python manage.py createsuperuser
 }
 ```
 
-`POST /api/token/refresh/` - Обновление `access_token`
+`POST /api/token/refresh/` - Обновление access_token
 ```json
 {
     "refresh": "your_refresh_token"
